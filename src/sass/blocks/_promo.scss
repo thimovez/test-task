@@ -1,23 +1,33 @@
-.promo {
-  padding: 51px 0;
-  background: url('../img/bgc/bgc.jpg') no-repeat 50% / cover;
-  &__head {
-    font-family: Nunito;
-    font-size: 27px;
-    line-height: 50px;
-    font-weight: 400;
-    width: 240px;
+@media screen and (min-width: $mobile) {
+  .promo {
+    padding: 51px 0;
+    background: url('../img/bgc/bgc.jpg') no-repeat 60% / cover;
+    &__head {
+      width: 240px;
+    }
+    &__description {
+      width: 240px;
+      margin-top: 21px;
+    }
+    &__button {
+      @include main_button;
+      height: 50px;
+      width: 148px;
+      margin-top: 32px;
+    }
   }
-  &__description {
+
+  .head {
+    font-family: Nunito;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  .description {
     font-family: Nunito;
     font-size: 16px;
     line-height: 26px;
-    margin-top: 21px;
-  }
-  &__button {
-    @include main_button;
-    height: 50px;
-    width: 148px;
-    margin-top: 32px;
+    font-weight: 400;
   }
 }

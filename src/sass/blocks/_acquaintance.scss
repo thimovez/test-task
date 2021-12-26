@@ -1,0 +1,27 @@
+@media screen and (min-width: $mobile) {
+  .acquaintance {
+    padding: 145px 0 0 0;
+    background-color: $bgc_color;
+    &__head {
+      margin-top: 40px;
+    }
+    &__subhead {
+      margin-top: 10px;
+    }
+    &__description {
+      margin-top: 20px;
+    }
+    &__button {
+      @include main_button;
+      height: 50px;
+      width: 148px;
+      margin-top: 44px;
+    }
+  }
+
+  .subhead {
+    font-family: Nunito;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
