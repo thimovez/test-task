@@ -1,0 +1,87 @@
+@media screen and (min-width: $mobile) {
+  .register {
+    background-color: $bgc_color;
+    padding: 145px 0 150px 0;
+    &__block {
+      display: block;
+      text-align: center;
+    }
+    &__subhead {
+      margin-top: 10px;
+      margin-bottom: 32px;
+    }
+    &__input {
+      width: 100%;
+      height: 54px;
+      margin-top: 50px;
+      border: 1px solid $disabled;
+      border-radius: 4px;
+      padding-left: 16px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__button {
+      @include main_button;
+      background: $disabled;
+      color: white;
+      width: 148px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .select {
+    &__description {
+      margin-top: 50px;
+    }
+    &__block {
+      display: flex;
+      flex-direction: column;
+      input {
+        margin-top: 8px;
+      }
+      span {
+        font-family: Nunito;
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    &__hide {
+      position: absolute;
+      overflow: hidden;
+      z-index: -1;
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+    }
+    &__drop {
+      display: inline-block;
+      cursor: pointer;
+      border: 1px solid black;
+      border-radius: 4px 0 0 4px;
+      font-family: Nunito;
+      font-size: 16px;
+      width: 83px;
+      height: 54px;
+      padding: 14px;
+    }
+    &__dragdrop {
+      margin: 50px 0;
+      display: flex;
+    }
+    &__input {
+      width: 100%;
+      border-top: 1px solid $disabled;
+      border-right: 1px solid $disabled;
+      border-bottom: 1px solid $disabled;
+      border-left: 0 solid white;
+      border-radius: 0 4px 4px 0;
+      padding-left: 16px;
+      font-family: Nunito;
+      font-size: 16px;
+      line-height: 26px;
+      color: #7e7e7e;
+    }
+  }
+}
