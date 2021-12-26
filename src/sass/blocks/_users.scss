@@ -1,37 +1,39 @@
-.users {
-  background-color: $bgc_color;
-  text-align: center;
-  display: block;
-  padding-top: 145px;
-  &__subhead {
-    margin: 10px 0 32px 0;
-  }
-  &__block {
-    width: 328px;
-    height: 313px;
-    background-color: white;
-    border-radius: 10px;
-    margin-top: 10px;
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-  &__photo {
-    margin: 36px 0 15px 0;
-  }
-  &__name {
-    margin: 0 auto;
-    width: 268px;
+@media screen and (min-width: $mobile) {
+  .users {
+    background-color: $bgc_color;
     text-align: center;
-  }
-  &__description {
-    width: 268px;
-    margin: 0 auto;
-  }
-  &__button {
-    @include main-button;
-    height: 50px;
-    width: 148px;
-    margin-top: 132px;
+    display: block;
+    padding-top: 145px;
+    &__subhead {
+      margin: 10px 0 32px 0;
+    }
+    &__block {
+      width: 328px;
+      height: 313px;
+      background-color: white;
+      border-radius: 10px;
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__photo {
+      margin: 36px 0 15px 0;
+    }
+    &__name {
+      margin: 0 auto;
+      width: 268px;
+      text-align: center;
+    }
+    &__description {
+      width: 268px;
+      margin: 0 auto;
+    }
+    &__button {
+      @include main-button;
+      height: 50px;
+      width: 148px;
+      margin-top: 132px;
+    }
   }
 }
