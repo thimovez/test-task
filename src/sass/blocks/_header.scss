@@ -1,0 +1,25 @@
+@media screen and (min-width: $mobile) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    &__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 13px;
+      transform: translateY(50%);
+      &-stick {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: black;
+      }
+      &-input {
+        overflow: hidden;
+        opacity: 0; /* hide input */
+        z-index: 1;
+      }
+    }
+  }
+}

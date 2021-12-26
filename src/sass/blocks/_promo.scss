@@ -1,0 +1,23 @@
+.promo {
+  padding: 51px 0;
+  background: url('../img/bgc/bgc.jpg') no-repeat 50% / cover;
+  &__head {
+    font-family: Nunito;
+    font-size: 27px;
+    line-height: 50px;
+    font-weight: 400;
+    width: 240px;
+  }
+  &__description {
+    font-family: Nunito;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 21px;
+  }
+  &__button {
+    @include main_button;
+    height: 50px;
+    width: 148px;
+    margin-top: 32px;
+  }
+}

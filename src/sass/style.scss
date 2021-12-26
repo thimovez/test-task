@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './utils/mixin';
+@import './base//fonts';
+@import './base/container';
+@import './blocks/header';
+@import './blocks/promo';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', 'Asap', sans-serif;
+}
